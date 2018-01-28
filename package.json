@@ -1,0 +1,28 @@
+{
+  "name": "fuse-vue",
+  "version": "1.0.0",
+  "main": "fuse.js",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.5.13",
+    "vue-class-component": "^6.1.2"
+  },
+  "devDependencies": {
+    "fuse-box": "^3.0.2",
+    "postcss": "^6.0.16",
+    "postcss-selector-parser": "^3.1.1",
+    "tslib": "^1.9.0",
+    "tslint": "^5.9.1",
+    "tslint-config-airbnb": "^5.5.0",
+    "typescript": "^2.6.2",
+    "uglify-es": "^3.3.9",
+    "uglify-js": "^3.3.9",
+    "vue-hot-reload-api": "^2.2.4",
+    "vue-template-compiler": "^2.5.13",
+    "vue-template-es2015-compiler": "^1.6.0"
+  },
+  "scripts": {
+    "dev": "node ./fuse.js",
+    "build": "node ./fuse.js build"
+  }
+}
