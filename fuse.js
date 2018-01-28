@@ -28,6 +28,7 @@ class Builder {
       output: 'dist/$name.js',
       sourceMaps: !this.isProduction,
       useTypescriptCompiler : true,
+      polyfillNonStandardDefaultUsage: true,
       plugins: [
         VueComponentPlugin(),
         WebIndexPlugin({
