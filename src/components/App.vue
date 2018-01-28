@@ -6,9 +6,7 @@
   import Vue from 'vue';
   import Component from 'vue-class-component';
 
-  @Component({
-    template: '<button @click="onClick">Click!</button>'
-  })
+  @Component
   export default class App extends Vue {
     message: string = 'Hello!';
 

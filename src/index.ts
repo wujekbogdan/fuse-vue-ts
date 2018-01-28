@@ -4,7 +4,7 @@ import './scss/app.scss';
 
 new Vue({
   el: '#js--app',
-  components: {
-    App,
+  render (createElement) {
+    return createElement(App);
   },
 });
