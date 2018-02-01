@@ -9,6 +9,8 @@
   },
   "devDependencies": {
     "fuse-box": "^3.0.2",
+    "node-sass": "^4.7.2",
+    "path": "^0.12.7",
     "postcss": "^6.0.16",
     "postcss-selector-parser": "^3.1.1",
     "tslib": "^1.9.0",
