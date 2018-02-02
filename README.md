@@ -3,9 +3,9 @@
 ## Features
 - TypeScript support
 - [Single File components](https://vuejs.org/v2/guide/single-file-components.html) support
-- [Class-style Vue Components](https://vuejs.org/v2/guide/typescript.html#Class-Style-Vue-Components)support - thanks to [vue-class-component](https://github.com/vuejs/vue-class-component)
+- [Class-style Vue Components](https://vuejs.org/v2/guide/typescript.html#Class-Style-Vue-Components) support - thanks to [vue-class-component](https://github.com/vuejs/vue-class-component)
 - Properties decorators support - thanks to [vue-property-decorator](https://github.com/kaorun343/vue-property-decorator)
-- SSCS compilations
+- SSCS compilation
 - PostCSS processing
 - tslint - thanks to [tslint-config-airbnb](https://www.npmjs.com/package/tslint-config-airbnb)
 - Static assets extraction and minification
