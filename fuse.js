@@ -9,8 +9,16 @@ const {
   QuantumPlugin,
   ImageBase64Plugin,
   VueComponentPlugin
-} = require('fuse-box')
-const {src, task, context} = require('fuse-box/sparky')
+} = require('fuse-box');
+const { src, task, context } = require('fuse-box/sparky')
+const { TypeHelper } = require('fuse-box-typechecker')
+
+const typeHelper = TypeHelper({
+    tsConfig: './tsconfig.json',
+    basePath:'./',
+    tsLint:'./tslint.json',
+    name: 'Type checker'
+});
 
 class Builder {
   constructor () {
@@ -63,7 +71,12 @@ class Builder {
       app.watch()
     }
 
-    app.instructions('> index.ts')
+    app
+      .instructions('> index.ts')
+      .completed(async () => {
+        const totalErrors = await typeHelper.runPromise();
+        console.log(totalErrors)
+      });
 
     return app
   }
