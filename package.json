@@ -5,7 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "vue": "^2.5.13",
-    "vue-class-component": "^6.1.2"
+    "vue-property-decorator": "^6.0.0"
   },
   "devDependencies": {
     "fuse-box": "^3.0.2",
